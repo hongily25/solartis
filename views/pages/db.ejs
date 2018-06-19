@@ -6,16 +6,26 @@
 
 <body>
 
-<% include ../partials/nav.ejs %>
-
+<% /* include ../partials/nav.ejs */ %>
 <div class="container">
-<h2>Database Results</h2>
+    <div class="wrapper">
+    <a href="/"><img src="/edc-header.png" style="max-width:700px; margin: 0 auto; display: block"></a>
+        <div class="jumbotron">
+            <h2><%= firstName %> <%= lastName %></h2>
+            <br>
+            <img style="max-width:400px" src="/<%= fileUrl %>">
+            <br><br>
+            <div style="word-wrap: break-word">
+            <h3 style="color:#FFF">Thanks for registering with EDC!</h3>
 
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.name %></li>
-    <% }); %>
-</ul>
+            <p style="margin:0;max-width:100%;margin-bottom:20px;">Throughout EDC, DeepLens captures your best moments. Select your favorite pictures and videos to make your highlight reel into a custom video. </p>
+            <button class="btn btn-info" style="color:#FFF;font-size:20px"><a class="custom-video" href="/prevideo" style="color:#FFF">Customize Now</a></button>
+
+            </div>
+        </div>
+    </div>
+
+       
 
 </div>
 
