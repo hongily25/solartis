@@ -11,8 +11,8 @@ body > h1 {
 body h2 {
   font-size: 1.4rem;
   padding-bottom: 5px;
-  border-bottom: 1px solid #0a6968;
-  color: #0a6968;
+  border-bottom: 1px solid #135795;
+  color: #135795;
   margin-bottom: 25px;
 }
 
@@ -26,12 +26,12 @@ body h2 {
 }
 
 .info i {
-  color: #0a6968;
+  color: #135795;
 }
 
 form h1 {
   font-size: 18px;
-  background: #0a6968 none repeat scroll 0% 0%;
+  background: #135795 none repeat scroll 0% 0%;
   color: rgb(255, 255, 255);
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
@@ -58,16 +58,18 @@ p {
   margin: 0px;
   font-weight: 500;
   line-height: 2;
-  color:#0a6968;
+  color:#135795;
 }
 
 h1 {
   text-align: left; 
   color: #FFF;
   padding: 10px;
+  padding-left: 50px;
   margin:0px 0px 0px 0px;
-  background-color: #0a6968;
+  background-color: #FFF;
   font-size: 26px;
+  border-bottom: 1px solid #135795;
 }
 
 input {
@@ -119,7 +121,7 @@ i {
 }
 
 .bouton-contact{
-  background-color: #0a6968;
+  background-color: #135795;
   color: #FFF;
   text-align: center;
   width: 100%;
