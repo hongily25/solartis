@@ -5,10 +5,10 @@
 </head>
 
 <body>
-	  <h1><img src="http://isoservices.azurewebsites.net/Images/solartisLogo.png" style="background-color: #fff;"></h1>
+	  <h1><a href="https://solartis.com"><img src="/solartisLogo.png" style="background-color: #fff;"></a></h1>
    <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
   
-  <form>
+  <form method="post" action="/" enctype="application/x-www-form-urlencoded">
 	    <h1>Please fill out the following policy.</h1>
 	    
     <div class="contentform">
@@ -19,282 +19,282 @@
       <h2>Policy</h2>
 
 			      <div class="form-group">
-			        <p>Policy Name <span>*</span></p>
+			        <p>Program Name <span>*</span></p>
 			        <span class="icon-case"><i class="fa fa-list-alt"></i></span>
-				        <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+				        <input type="text" value="Healthcare" name="ProgramName" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
                 <div class="validation"></div>
        </div> 
 
             <div class="form-group">
             <p>Policy Type <span>*</span></p>
             <span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+				<input type="text" value="Individual" name="PolicyType" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>State <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
-                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+      <input type="text" value="AL" name="State" id="email"/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Zipcode <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
-				<input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+				<input type="text" value="35005" name="ZipCode" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Effective Date <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+				<input type="text" value="2018-05-14" name="EffectiveDate" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Event Name <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="PLICalculateRate" name="EventName" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Event Version <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2.2.2.1" name="EventVersion" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Applicable from Date <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2018-05-14" name="ApplicableFromDate" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Number of Providers <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="1" name="NumOfProviders" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Shared or Separate limit <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-users"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Shared" name="SharedOrSeparateLimit" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>PL Or WL Coverage Type <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Claims-Made" name="PLOrWLCoverageType" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Professional Liability Limits <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Yes" name="$1M/$3M" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Workplace Liability? <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Yes" name="WorkplaceLiabilityInsurance" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Workplace Liability Limits <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="$2M/$6M" name="WorkplaceLiabilityLimitsOfInsurance" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Corporation or Partnership Coverage <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Yes" name="CorporationOrPartnershipCoverage" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Additional Insured Coverage <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Yes" name="AdditionalInsuredCoverage" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Employment Category <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Employed" name="EmploymentCategory" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Transition Factor <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="TransitionFactor" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Product Number <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="HC_PLI" name="ProductNumber" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Product Version <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2.0" name="ProductVerNumber" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Expenses Inside or Outside <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="Inside" name="ExpensesInsideOrOutside" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Deductible Amount <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="500" name="DeductibleAmount" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Number of Claims in Past 5 Years <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ol"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2" name="NumberOfClaimsinPast5Yrs" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Total Reported Incurred Loss and Expense <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="200000" name="TotalReportedIncurredLossandExpense" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Retro Date <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2" name="RetroDate" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Revenue <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="2000000" name="Revenue" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Residential or Commercial <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-home"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="ResidentialOrCommercialBusinessModifier" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Project Size Modifier <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="ProjectSizeModifier" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Written Contract Modifier <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="WrittenContractsModifier" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Risk Management Modifier <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="RiskManagementModifier" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Financial Strength <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="FinancialStrength" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Use of Subcontractors <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-users"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="UseofSubcontractors" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>History of Disciplinary Action <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="HistoryofDisciplinaryAction" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Mergers and Acquisitions <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="MergersandAcquisitions" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Experience of Principals <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="ExperienceofPrincipals" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Client Size <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-users"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="100" name="ClientSize" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Require Subs to Show Proof<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="RequireSubstoShowProofOfEAndO" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Require A and E<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="10" name="RequireAandEstoShowProofOfEandO" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>KY Local Government Tax Rate<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="20" name="KYLocalGovernmentTaxRate" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>KY Local Government Tax Overridden<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+				<input type="text" value="No" name="KYLocalGovernmentTaxOverridden" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
@@ -308,119 +308,126 @@
 			<div class="form-group">
 			<p>First Name <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="John" name="FirstName" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Middle Initial <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="E" name="MiddleInitial" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Last Name <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Doe" name="LastName" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Provider Class <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Athletic Trainer" name="ProviderClass" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Professional Association <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Licensed" name="ProfessionalAssociation" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Years of Policy <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="" name="YearsOfPolicy" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Years in Practice <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="1" name="YearsInPractice" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Risk Management Discount <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Yes" name="RiskManagementDiscount" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Patient Compensation Fund <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="No" name="PatientCompensationFund" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Hours Work Per Week<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-clock-o"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="25" name="HoursWorkPerWeek" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Schedule Rating Factor <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="25" name="ScheduleRatingFactor" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Email <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="1" name="ProviderEmailId" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Meets Student Qualification <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+				<input type="text" value="Yes" name="MeetsStudentQualification" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Use of Written Contracts Factor <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-                <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <input type="text" value="10" name="UseofWrittenContractsFactor" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Training or Education Factor <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-                <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <input type="text" value="10" name="TrainingorEducationFactor" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Professional Reputation Factor <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-                <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <input type="text" value="10" name="ProfessionalReputationFactor" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Nature of Operations Factor <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-                <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                <input type="text" value="10" name="NatureofOperationsFactor" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Amazon Id <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-building-o"></i></span>
+                <input type="text" value="amzn1.ask.account.123" name="AmazonId" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
 	
