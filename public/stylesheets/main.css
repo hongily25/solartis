@@ -118,6 +118,7 @@ i {
 
 .contentform {
   padding: 40px 30px;
+  position: relative;
 }
 
 .bouton-contact{
@@ -179,4 +180,19 @@ i {
   clear: both;
   display: block;
   padding-top: 2.3rem;
+}
+
+.policy-img > img {
+  max-width: 100px;
+}
+
+.policy-img {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+}
+
+.send.fa-envelope-o {
+  color: #fff;
+  margin-left: .5rem;
 }
