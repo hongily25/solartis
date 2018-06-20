@@ -7,11 +7,12 @@ var bodyParser = require('body-parser')
 
 var url = "mongodb+srv://emily:Kurama!25@cluster0-gygul.mongodb.net/test";
 
+/* Create database */
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   console.log("Database created!");
   var dbo = db.db("mydb");
-  dbo.createCollection("sol", function(err, res) {
+  dbo.createCollection("solartisdb", function(err, res) {
     if (err) throw err;
     console.log("Collection created!");
     db.close();
@@ -25,15 +26,11 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req,res) => res.render('pages/index'))
-  .get('/amazon/:id', (req,res) => {
-    console.log('req.params.id: ', req.params.id);
-    res.send(req.params.id);
-  })
   .get('/all', (req, res) => {
     MongoClient.connect(url, function(err, db) {
       if (err) throw err;
       var dbo = db.db("mydb");
-      dbo.collection("sol").find({}).toArray(function(err, result) {
+      dbo.collection("solartisdb").find({}).toArray(function(err, result) {
         if (err) throw err;
         res.send(result);
         console.log(result);
@@ -46,19 +43,22 @@ express()
       if (err) throw err;
       var dbo = db.db("mydb");
       if(req.params.id) {
-        dbo.collection("sol").update(
-          {amazonId: req.params.id },
-          {
-            $set:{solartis: ["data"]}
-          },
-          {upsert:true}
-        );
+        var query = { amazonId: req.params.id }
+        dbo.collection("solartisdb").find(query).toArray(function(err, result) {
+          if (err) throw err;
+          console.log("result: ", result);
+          db.close();
+          res.send(result);
+        })
+      } else {
+        res.send('go to /all to see all entries');
       }
-     res.send('go to /all to see all entries');
+      
     });
   })
   .post('/', (req, res) => {
-     console.log('req.body', req.body);
+     //console.log('req.body', req.body);
+     var fu = req.body.AmazonId;
 
      var solartisRequest = {
       "EndClientUserUniqueSessionId": "Uniquesession",
@@ -152,7 +152,23 @@ express()
       }
       console.log('httpResponse.statusCode', httpResponse.statusCode);
       console.log('body: ', body);
-      res.render('pages/db', { statusCode: httpResponse.statusCode, statusMessage: httpResponse.statusMessage });
-    });
+
+      /* Store request in database. Todo: Store BODY in database */
+        MongoClient.connect(url, function(err, db) {
+          if (err) throw err;
+          var dbo = db.db("mydb");
+          if(req.body.AmazonId) {
+            console.log('UPDATE COLLECTION');
+            dbo.collection("solartisdb").update(
+              {amazonId: req.body.AmazonId },
+              {
+                $set:{solartis: solartisRequest }
+              },
+              {upsert:true}
+            );
+          }
+          res.render('pages/db', { statusCode: httpResponse.statusCode, statusMessage: httpResponse.statusMessage });
+        });
+      });
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
