@@ -152,7 +152,7 @@ express()
       }
       console.log('httpResponse.statusCode', httpResponse.statusCode);
       console.log('body: ', body);
-      res.send('Status Code: ' + httpResponse.statusCode + '.   ' + 'Status Message: ' + httpResponse.statusMessage);
+      res.render('pages/db', { statusCode: httpResponse.statusCode, statusMessage: httpResponse.statusMessage });
     });
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))

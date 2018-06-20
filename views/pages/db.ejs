@@ -5,29 +5,26 @@
 </head>
 
 <body>
+	  <h1><a href="https://solartis.com"><img src="/solartisLogo.png" style="background-color: #fff;"></a></h1>
+   <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
+  
+  <form method="post" action="/" enctype="application/x-www-form-urlencoded">
+	    <h1>Thank you for filling out the form!</h1>
+	    
+    <div class="contentform">
+    	<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
 
-<% /* include ../partials/nav.ejs */ %>
-<div class="container">
-    <div class="wrapper">
-    <a href="/"><img src="/edc-header.png" style="max-width:700px; margin: 0 auto; display: block"></a>
-        <div class="jumbotron">
-            <h2><%= firstName %> <%= lastName %></h2>
-            <br>
-            <img style="max-width:400px" src="/<%= fileUrl %>">
-            <br><br>
-            <div style="word-wrap: break-word">
-            <h3 style="color:#FFF">Thanks for registering with EDC!</h3>
-
-            <p style="margin:0;max-width:100%;margin-bottom:20px;">Throughout EDC, DeepLens captures your best moments. Select your favorite pictures and videos to make your highlight reel into a custom video. </p>
-            <button class="btn btn-info" style="color:#FFF;font-size:20px"><a class="custom-video" href="/prevideo" style="color:#FFF">Customize Now</a></button>
-
-            </div>
-        </div>
+        Status Code: <%=  statusCode %> <br>
+        Status Message: <%= statusMessage %> <br><br>
+        <a href="/">Return to homepage</a>
     </div>
 
-       
 
-</div>
+	</div>
+	
+</form>	
 
+  
 </body>
+</html>
 </html>
