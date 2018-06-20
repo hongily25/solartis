@@ -14,10 +14,8 @@
     <div class="contentform">
     	<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
 
-
-    	<div class="leftcontact">
       <h2>Policy</h2>
-
+    	<div class="leftcontact">
 			      <div class="form-group">
 			        <p>Program Name <span>*</span></p>
 			        <span class="icon-case"><i class="fa fa-list-alt"></i></span>
@@ -158,6 +156,11 @@
                 <div class="validation"></div>
 			</div>	
 
+	</div>
+
+	<div class="rightcontact">	
+
+
 			<div class="form-group">
 			<p>Expenses Inside or Outside <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
@@ -180,7 +183,7 @@
 			</div>	
 
 			<div class="form-group">
-			<p>Total Reported Incurred Loss and Expense <span>*</span></p>
+			<p>Total Reported Incurred Loss<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-money"></i></span>
 				<input type="text" value="200000" name="TotalReportedIncurredLossandExpense" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
                 <div class="validation"></div>
@@ -302,8 +305,9 @@
 
 	</div>
 
-	<div class="rightcontact">	
-      <h2>Provider</h2>
+  <h2 class="providers">Providers</h2>
+
+    <div class="leftcontact">
 
 			<div class="form-group">
 			<p>First Name <span>*</span></p>
@@ -322,42 +326,42 @@
 			<div class="form-group">
 			<p>Last Name <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" value="Doe" name="LastName" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Doe" name="LastName" id="ville" data-rule="required" />
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Provider Class <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" value="Athletic Trainer" name="ProviderClass" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Athletic Trainer" name="ProviderClass" id="ville" data-rule="required" />
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Professional Association <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" value="Licensed" name="ProfessionalAssociation" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Licensed" name="ProfessionalAssociation" id="ville" data-rule="required" />
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Years of Policy <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" value="" name="YearsOfPolicy" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="1" name="YearsOfPolicy" id="ville" data-rule="required"/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Years in Practice <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="text" value="1" name="YearsInPractice" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="1" name="YearsInPractice" id="ville" data-rule="required" />
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Risk Management Discount <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-list-ul"></i></span>
-				<input type="text" value="Yes" name="RiskManagementDiscount" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="Yes" name="RiskManagementDiscount" id="ville" data-rule="required" />
                 <div class="validation"></div>
 			</div>	
 
@@ -367,8 +371,11 @@
 				<input type="text" value="No" name="PatientCompensationFund" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
+    
+    </div>
 
-			<div class="form-group">
+    <div class="rightcontact">
+      			<div class="form-group">
 			<p>Hours Work Per Week<span>*</span></p>
 			<span class="icon-case"><i class="fa fa-clock-o"></i></span>
 				<input type="text" value="25" name="HoursWorkPerWeek" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
@@ -430,8 +437,8 @@
                 <input type="text" value="amzn1.ask.account.123" name="AmazonId" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
-	
-	</div>
+    </div>
+
 	</div>
 <button type="submit" class="bouton-contact">Send</button>
 	

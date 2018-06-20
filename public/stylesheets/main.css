@@ -174,3 +174,9 @@ i {
 #sendmessage.show,.show  {
   display:block;
 }
+
+.providers {
+  clear: both;
+  display: block;
+  padding-top: 2.3rem;
+}
