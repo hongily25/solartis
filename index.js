@@ -43,7 +43,7 @@ express()
       if (err) throw err;
       var dbo = db.db("mydb");
       if(req.params.id) {
-        var query = { amazonId: req.params.id }
+        var query = { AmazonId: req.params.id }
         dbo.collection("solartisdb").find(query).toArray(function(err, result) {
           if (err) throw err;
           console.log("result: ", result);
@@ -58,7 +58,6 @@ express()
   })
   .post('/', (req, res) => {
      //console.log('req.body', req.body);
-     var fu = req.body.AmazonId;
 
      var solartisRequest = {
       "EndClientUserUniqueSessionId": "Uniquesession",
@@ -158,9 +157,8 @@ express()
           if (err) throw err;
           var dbo = db.db("mydb");
           if(req.body.AmazonId) {
-            console.log('UPDATE COLLECTION');
             dbo.collection("solartisdb").update(
-              {amazonId: req.body.AmazonId },
+              { AmazonId: req.body.AmazonId },
               {
                 $set:{solartis: solartisRequest }
               },
