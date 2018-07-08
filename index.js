@@ -57,7 +57,7 @@ express()
     });
   })
   .post('/', (req, res) => {
-     //console.log('req.body', req.body);
+     console.log('req.body', req.body);
 
      var solartisRequest = {
       "EndClientUserUniqueSessionId": "Uniquesession",
@@ -140,7 +140,11 @@ express()
 
      request.post({
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json',
+        'EventName': 'PLICalculateRate',
+        'EventVersion': '2.2.2.1',
+        'Token': solartisRequest.ServiceRequestDetail.Token
+
       },
       url: 'https://profapihk.solartis.net/DroolsV6/DroolsService/FireEventV2',
       body: JSON.stringify(solartisRequest)
@@ -151,6 +155,7 @@ express()
       }
       console.log('httpResponse.statusCode', httpResponse.statusCode);
       console.log('body: ', body);
+      var solartisResponse = JSON.parse(body);
 
       /* Store request in database. Todo: Store BODY in database */
         MongoClient.connect(url, function(err, db) {
@@ -160,7 +165,7 @@ express()
             dbo.collection("solartisdb").update(
               { AmazonId: req.body.AmazonId },
               {
-                $set:{solartis: solartisRequest }
+                $set:{solartis: solartisResponse }
               },
               {upsert:true}
             );
