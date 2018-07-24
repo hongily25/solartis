@@ -28,7 +28,7 @@ express()
   .get('/', (req,res) => {
  
       if (req.query.access_token) {      
-        request.get('https://api.amazon.com/user/profile?access_token=' + req.query.access_token, (err, httpResponse, body) => {
+        request('https://api.amazon.com/user/profile?access_token=' + req.query.access_token, (err, httpResponse, body) => {
           // do something 
           if (err) {
             res.send('error');
