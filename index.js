@@ -25,7 +25,13 @@ express()
   .use(bodyParser.json())
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req,res) => res.render('pages/index'))
+  .get('/', (req,res) => {
+      if (req.query.access_token) {
+       res.render('pages/index', { message: req.query.access_token })
+      } else {
+        res.render('pages/index', { message: 'no access token' })
+      }
+  })
   .get('/all', (req, res) => {
     MongoClient.connect(url, function(err, db) {
       if (err) throw err;
