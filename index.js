@@ -34,7 +34,7 @@ express()
             res.send('error');
           }
           var string = JSON.parse(body);
-          res.render('pages/index', { message: 'inside request' })
+          res.render('pages/index', { message: string.user_id })
         });
         
         
