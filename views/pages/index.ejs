@@ -7,12 +7,12 @@
 <body>
 	  <h1><a href="https://solartis.com"><img src="/solartisLogo.png" style="background-color: #fff;"></a></h1>
    <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
-   
+   <div class="info"><p>
    <a href="#" id="LoginWithAmazon">
   <img border="0" alt="Login with Amazon"
     src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
     width="156" height="32" />
-</a>
+</a></p></div>
 
 <div id="amazon-root"></div>
 <script type="text/javascript">
@@ -38,8 +38,6 @@
   };
 
 </script>
-
-Access Token: <%= message %>
   
   <form method="post" action="/" enctype="application/x-www-form-urlencoded">
 	    <h1>Please sign in with Amazon and fill out the following policy.</h1>
@@ -424,7 +422,7 @@ Access Token: <%= message %>
 			<div class="form-group">
 			<p>Email <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-				<input type="text" value="john@gmail.com" name="ProviderEmailId" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+				<input type="text" value="<%= amazon_email %>" name="ProviderEmailId" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>	
 
@@ -466,7 +464,7 @@ Access Token: <%= message %>
 			<div class="form-group">
 			<p>Amazon Id <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-                <input type="text" value="amzn1.ask.account.123" name="AmazonId" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                <input type="text" value="<%= user_id %>" name="AmazonId" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
                 <div class="validation"></div>
 			</div>
     </div>
