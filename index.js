@@ -31,7 +31,7 @@ express()
         request.post({
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + req.query.access_token;
+                'Authorization': 'bearer ' + req.query.access_token;
              },
             url: 'https://api.amazon.com/user/profile'
         }, (err, httpResponse, body) => {
