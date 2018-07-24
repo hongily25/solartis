@@ -26,15 +26,15 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req,res) => {
-      if (req.query.access_token) {
-        
+/*  
+      if (req.query.access_token) {      
         request.post({
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + req.query.access_token;
-      },
-      url: 'https://api.amazon.com/user/profile'
-    }, (err, httpResponse, body) => {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + req.query.access_token;
+             },
+            url: 'https://api.amazon.com/user/profile'
+        }, (err, httpResponse, body) => {
           // do something 
           var string = JSON.parse(body);
           res.render('pages/index', { message: string.user_id })
@@ -42,6 +42,8 @@ express()
       } else {
         res.render('pages/index', { message: 'no access token' })
       }
+      */
+    res.render('pages/index', { message: 'no access token' })
   })
   .get('/all', (req, res) => {
     MongoClient.connect(url, function(err, db) {
