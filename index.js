@@ -34,12 +34,12 @@ express()
             res.send('error');
           }
           var string = JSON.parse(body);
-          res.render('pages/index', { message: string.user_id })
+          res.render('pages/index', { message: string.name, user_id: string.user_id, amazon_email: string.email })
         });
         
         
       } else {
-        res.render('pages/index', { message: 'no access token' })
+        res.render('pages/index', { message: '' })
       }
   })
   .get('/all', (req, res) => {
