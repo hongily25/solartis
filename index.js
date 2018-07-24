@@ -39,7 +39,7 @@ express()
         
         
       } else {
-        res.render('pages/index', { message: '' })
+        res.render('pages/index', { message: '', user_id: '', amazon_email: '' })
       }
   })
   .get('/all', (req, res) => {
