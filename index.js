@@ -28,13 +28,11 @@ express()
   .get('/', (req,res) => {
  
       if (req.query.access_token) {      
-        request.post({
-            headers: {
-                'Content-Type': 'application/json'
-             },
-            url: 'https://api.amazon.com/user/profile?access_token=' + req.query.access_token
-        }, (err, httpResponse, body) => {
+        request.post('https://api.amazon.com/user/profile?access_token=' + req.query.access_token, (err, httpResponse, body) => {
           // do something 
+          if (err) {
+            res.send('error');
+          }
           var string = JSON.parse(body);
           res.render('pages/index', { message: 'inside request' })
         });
