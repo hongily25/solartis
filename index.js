@@ -28,7 +28,6 @@ express()
   .get('/', (req,res) => {
  
       if (req.query.access_token) {      
-        /*
         request.post({
             headers: {
                 'Content-Type': 'application/json',
@@ -38,10 +37,8 @@ express()
         }, (err, httpResponse, body) => {
           // do something 
           var string = JSON.parse(body);
-          res.render('pages/index', { message: string })
+          res.render('pages/index', { message: 'inside request' })
         });
-        */
-        res.render('pages/index', { message: req.query.access_token })
       } else {
         res.render('pages/index', { message: 'no access token' })
       }
