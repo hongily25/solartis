@@ -67,10 +67,13 @@ var handlers = {
 Auth Code Grant;
 
 Authorization URI https://www.amazon.com/ap/oa
+
 Access Token URI https://api.amazon.com/auth/o2/token
+
 Scope profile
 
 Remember to add redirect urls to app console. 
+
 https://sellercentral.amazon.com/home?cor=login_NA&
 
 https://login.amazon.com/manageApps
