@@ -7,9 +7,40 @@
 <body>
 	  <h1><a href="https://solartis.com"><img src="/solartisLogo.png" style="background-color: #fff;"></a></h1>
    <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
+   
+   <a href="#" id="LoginWithAmazon">
+  <img border="0" alt="Login with Amazon"
+    src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+    width="156" height="32" />
+</a>
+
+<div id="amazon-root"></div>
+<script type="text/javascript">
+
+  window.onAmazonLoginReady = function() {
+    amazon.Login.setClientId('amzn1.application-oa2-client.fe22b31962b1458c9b9fed6b0a7b5050');
+  };
+  (function(d) {
+    var a = d.createElement('script'); a.type = 'text/javascript';
+    a.async = true; a.id = 'amazon-login-sdk';
+    a.src = 'https://api-cdn.amazon.com/sdk/login1.js';
+    d.getElementById('amazon-root').appendChild(a);
+  })(document);
+
+</script>
+
+<script type="text/javascript">
+
+  document.getElementById('LoginWithAmazon').onclick = function() {
+    options = { scope : 'profile' };
+    amazon.Login.authorize(options, 'https://solartis.herokuapp.com');
+    return false;
+  };
+
+</script>
   
   <form method="post" action="/" enctype="application/x-www-form-urlencoded">
-	    <h1>Please fill out the following policy. Hi hong</h1>
+	    <h1>Please sign in with Amazon and fill out the following policy.</h1>
 	    
     <div class="contentform">
       <div class="policy-img"><img src="/FontAwesome_f15c(0)_128.png"></div>
