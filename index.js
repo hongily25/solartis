@@ -27,7 +27,18 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req,res) => {
       if (req.query.access_token) {
-       res.render('pages/index', { message: req.query.access_token })
+        
+        request.post({
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + req.query.access_token;
+      },
+      url: 'https://api.amazon.com/user/profile'
+    }, (err, httpResponse, body) => {
+          // do something 
+          var string = JSON.parse(body);
+          res.render('pages/index', { message: string.user_id })
+        });
       } else {
         res.render('pages/index', { message: 'no access token' })
       }
