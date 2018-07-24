@@ -28,7 +28,7 @@ express()
   .get('/', (req,res) => {
  
       if (req.query.access_token) {      
-        request.post('https://api.amazon.com/user/profile?access_token=' + req.query.access_token, (err, httpResponse, body) => {
+        request.get('https://api.amazon.com/user/profile?access_token=' + req.query.access_token, (err, httpResponse, body) => {
           // do something 
           if (err) {
             res.send('error');
@@ -36,6 +36,8 @@ express()
           var string = JSON.parse(body);
           res.render('pages/index', { message: 'inside request' })
         });
+        
+        
       } else {
         res.render('pages/index', { message: 'no access token' })
       }
