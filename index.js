@@ -30,10 +30,9 @@ express()
       if (req.query.access_token) {      
         request.post({
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + req.query.access_token;
+                'Content-Type': 'application/json'
              },
-            url: 'https://api.amazon.com/user/profile'
+            url: 'https://api.amazon.com/user/profile?access_token=' + req.query.access_token
         }, (err, httpResponse, body) => {
           // do something 
           var string = JSON.parse(body);
