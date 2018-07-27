@@ -1,80 +1,55 @@
-# Solartis
-```
-'use strict';
-var Alexa = require('alexa-sdk');
-var https = require('https');
+# Policy Pal
+## Inspiration
+Insurance policy documents tend to be very long an difficult to navigate. Further, customers typically do not need to reference them very often and when they do, they are usually looking for very specific pieces of information. Unfortunately, the information they are looking for is often buried in a 20 page document or file that sometimes gets lost.
+## What it does
+Policy Pal comprises a web app for issuing insurance policies on the road and a voice app for navigating policy information.
+## How we built it
+We use a node server for storing policy information provided by Solartis with application information gathered from our web app. We can then access the information from our Alexa app.
+We were able to add a user input field for Amazon Alexa ID so we could query our database to link a user to the Alexa skill.
+## Alexa Skill
+To use the Policy Pal skill, apply for an insurance policy at:
+http://solartis.herokuapp.com
+Once your policy is issued, you can ask for details using Policy Pal.
 
-var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
-var SKILL_NAME = 'Vietnamese Facts';
+You can ask Policy Pal for:
 
-exports.handler = function(event, context, callback) {
-    var alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
-};
-
-var handlers = {
-    'LaunchRequest': function () {
-        this.emit('GetFact');
-    },
-    'GetNewFactIntent': function () {
-        this.emit('GetFact');
-    },
-    'GetFact': function () {
-        var alexasdk = this;
-
-        // Create speech output
-        var speechOutput = "Here's your fact: " + randomFact;
-       // speechOutput = this.event.session.user.accessToken;
-        var options = {
-          host: 'api.amazon.com',
-          path: '/user/profile?access_token=' + this.event.session.user.accessToken
-        };
-        
-       https.get('https://api.amazon.com/user/profile?access_token=' + this.event.session.user.accessToken, 
-       function(res){
-            var str = '';
-            console.log('Response is '+res.statusCode);
-    
-            res.on('data', function (chunk) {
-                   str += chunk;
-             });
-    
-            res.on('end', function () {
-                 console.log(str);
-                 var string = JSON.parse(str);
-                 alexasdk.emit(':tell', string.user_id)
-             });
-       });
-
-    },
-    'AMAZON.HelpIntent': function () {
-        var speechOutput = "You can say tell me a Vietnamese fact, or, you can say exit... What can I help you with?";
-        var reprompt = "What can I help you with?";
-        this.emit(':ask', speechOutput, reprompt);
-    },
-    'AMAZON.CancelIntent': function () {
-        this.emit(':tell', 'Goodbye!');
-    },
-    'AMAZON.StopIntent': function () {
-        this.emit(':tell', 'Goodbye!');
-    }
-};
-```
-# Account Linking
-
-Auth Code Grant;
-
-Authorization URI https://www.amazon.com/ap/oa
-
-Access Token URI https://api.amazon.com/auth/o2/token
-
-Scope profile
-
-Remember to add redirect urls to app console. 
-
-https://sellercentral.amazon.com/home?cor=login_NA&
-
-https://login.amazon.com/manageApps
-
+Program Name,
+Policy Type,
+Zip Code,
+State,
+Effective Date,
+Event Name,
+Event Version,
+Applicable From Date,
+Number of Providers,
+Shared or Separate Limit,
+Coverage Type,
+Professional Liability Limits of Insurance,
+Workplace Liability Limits of Insurance,
+Workplace Liability Insurance,
+Corporation or Partnership Coverage,
+Additional Insured Coverage,
+Employment Category,
+Transition Factor,
+Product Number,
+Product Version Number,
+Expenses Inside or Outside,
+Deductible Amount,
+Number of Claims in the Past Five Years,
+Total Reported Incurred Loss and Expense,
+Retro Date,
+Revenue,
+Residential or Commercial Business Modifier,
+Project Size Modifier,
+Written Contracts Modifier,
+Risk Management Modifier,
+Financial Strength,
+Use of Subcontractors,
+History of Disciplinary Action,
+Mergers and Acquisitions,
+Experience of Principals,
+Client Size,
+Subs Required to Show Proof of Errors and Omissions,
+A and E Required to Show Proof of Errors and Omissions,
+Local Government Tax Rate,
+Local Government Tax Overridden
