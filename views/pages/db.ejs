@@ -9,13 +9,19 @@
    <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
   
   <form method="post" action="/" enctype="application/x-www-form-urlencoded">
-	    <h1>Thank you for filling out the form!</h1>
+	
 	    
     <div class="contentform">
     	<div class="policy-img"><img src="/FontAwesome_f15c(0)_128.png"></div>
 
-        Status Code: <%=  statusCode %> <br>
-        Status Message: <%= statusMessage %> <br><br>
+         <% if(statusCode == 200> { %>
+	 	<h1>Thank you for filling out the form!</h1>
+		It has been successfully saved to the database. Now go to your Alexa app and link your Amazon account to the Policy Pal skill. Afterwards, you will be able to use the Policy Pal skill to request information about your insurance.
+	<% } else { %>
+		<h1>Sorry, there was an error!</h1>
+		Please go back and try again.
+	<% } %>
+	<br><br>
         <a href="/">Return to homepage</a>
     </div>
 
