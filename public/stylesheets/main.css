@@ -16,13 +16,19 @@ body h2 {
   margin-bottom: 25px;
 }
 
+.info {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .info p {
-  text-align:center;
+  text-align:left;
   color: #767575;
   text-transform:none;
   font-weight:600;
   font-size:15px;
-  margin-top:15px
+  margin-top:15px;
+  line-height: 1.5;
 }
 
 .info i {
