@@ -1,7 +1,7 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "name": "Policy Pal",
+  "description": "A mobile app for issuing insurance policies on the road and a voice app for navigating policy information",
+  "repository": "https://github.com/hongily25/solartis",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs"
