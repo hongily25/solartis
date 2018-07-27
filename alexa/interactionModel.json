@@ -1,0 +1,505 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "policy pal",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ProgramNameIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the program name",
+                        "Give me my program name",
+                        "Tell me the program name",
+                        "Tell me my program name",
+                        "What is the program name",
+                        "What is my program name"
+                    ]
+                },
+                {
+                    "name": "PolicyTypeIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me my policy type",
+                        "Tell me the policy type",
+                        "Tell me my policy type",
+                        "What is the policy type",
+                        "What is my policy type"
+                    ]
+                },
+                {
+                    "name": "ZipCodeIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the zip code",
+                        "Give me my zip code",
+                        "Tell me the zip code",
+                        "Tell me my zip code",
+                        "What is the zip code",
+                        "What is my zip code"
+                    ]
+                },
+                {
+                    "name": "StateIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the state",
+                        "Give me my state",
+                        "Tell me the state",
+                        "Tell me my state",
+                        "What is the state",
+                        "What is my state"
+                    ]
+                },
+                {
+                    "name": "EffectiveDateIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the effective date",
+                        "Give me my effective date",
+                        "Tell me the effective date",
+                        "Tell me my effective date",
+                        "What is the effective date",
+                        "What is my effective date"
+                    ]
+                },
+                {
+                    "name": "EventNameIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the event name",
+                        "Give me my event name",
+                        "Tell me the event name",
+                        "Tell me my event name",
+                        "What is the event name",
+                        "What is my event name"
+                    ]
+                },
+                {
+                    "name": "EventVersionIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the event version",
+                        "Give me my event version",
+                        "Tell me the event version",
+                        "Tell me my event version",
+                        "What is the event version",
+                        "What is my event version"
+                    ]
+                },
+                {
+                    "name": "ApplicableFromDateIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the applicable from date",
+                        "Give me my applicable from date",
+                        "Tell me the applicable from date",
+                        "Tell me my applicable from date",
+                        "What is the applicable from date",
+                        "What is my applicable from date"
+                    ]
+                },
+                {
+                    "name": "NumOfProvidersIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the number of providers",
+                        "Give me my number of providers",
+                        "Tell me the number of providers",
+                        "Tell me my number of providers",
+                        "What is the number of providers",
+                        "What is my number of providers"
+                    ]
+                },
+                {
+                    "name": "SharedOrSeparateLimitIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have a shared or separate limit",
+                        "Tell me if I have a shared or separate limit",
+                        "is a shared or separate limit included"
+                    ]
+                },
+                {
+                    "name": "PLOrWLCoverageTypeIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the coverage type",
+                        "Give me my coverage type",
+                        "Tell me the coverage type",
+                        "Tell me my coverage type",
+                        "What is the coverage type",
+                        "What is my coverage type"
+                    ]
+                },
+                {
+                    "name": "ProfessionalLiabilityLimitsOfInsuranceIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the professional liability limits of insurance",
+                        "Give me my professional liability limits of insurance",
+                        "Tell me the professional liability limits of insurance",
+                        "Tell me my professional liability limits of insurance",
+                        "What is the professional liability limits of insurance",
+                        "What is my professional liability limits of insurance"
+                    ]
+                },
+                {
+                    "name": "WorkplaceLiabilityLimitsOfInsuranceIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the workplace liability limits of insurance",
+                        "Give me my workplace liability limits of insurance",
+                        "Tell me the workplace liability limits of insurance",
+                        "Tell me my workplace liability limits of insurance",
+                        "What is the workplace liability limits of insurance",
+                        "What is my workplace liability limits of insurance"
+                    ]
+                },
+                {
+                    "name": "WorkplaceLiabilityInsuranceIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have workplace liability insurance",
+                        "Tell me if I have workplace liability insurance",
+                        "is workplace liability insurance included"
+                    ]
+                },
+                {
+                    "name": "CorporationOrPartnershipCoverageIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have corporation or partnership coverage",
+                        "Tell me if I have corporation or partnership coverage",
+                        "is corporation or partnership coverage included"
+                    ]
+                },
+                {
+                    "name": "AdditionalInsuredCoverageIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have additional insured coverage",
+                        "Tell me if I have additional insured coverage",
+                        "is additional insured coverage included"
+                    ]
+                },
+                {
+                    "name": "EmploymentCategoryIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the employment category",
+                        "Give me my employment category",
+                        "Tell me the employment category",
+                        "Tell me my employment category",
+                        "What is the employment category",
+                        "What is my employment category"
+                    ]
+                },
+                {
+                    "name": "TransitionFactorIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the transition factor",
+                        "Give me my transition factor",
+                        "Tell me the transition factor",
+                        "Tell me my transition factor",
+                        "What is the transition factor",
+                        "What is my transition factor"
+                    ]
+                },
+                {
+                    "name": "ProductNumberIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the product number",
+                        "Give me my product number",
+                        "Tell me the product number",
+                        "Tell me my product number",
+                        "What is the product number",
+                        "What is my product number"
+                    ]
+                },
+                {
+                    "name": "ProductVerNumberIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the product version number",
+                        "Give me my product version number",
+                        "Tell me the product version number",
+                        "Tell me my product version number",
+                        "What is the product version number",
+                        "What is my product version number"
+                    ]
+                },
+                {
+                    "name": "ExpensesInsideOrOutsideIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have expenses inside or outside",
+                        "Tell me if I have expenses inside or outside",
+                        "are expenses inside or outside included"
+                    ]
+                },
+                {
+                    "name": "DeductibleAmountIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the deductible amount",
+                        "Give me my deductible amount",
+                        "Tell me the deductible amount",
+                        "Tell me my deductible amount",
+                        "What is the deductible amount",
+                        "What is my deductible amount"
+                    ]
+                },
+                {
+                    "name": "NumberOfClaimsinPastFiveYrsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the number of claims in the past five years",
+                        "Give me my number of claims in the past five years",
+                        "Tell me the number of claims in the past five years",
+                        "Tell me my number of claims in the past five years",
+                        "What is the number of claims in the past five years",
+                        "What is my number of claims in the past five years"
+                    ]
+                },
+                {
+                    "name": "TotalReportedIncurredLossandExpenseIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the total reported incurred loss and expense",
+                        "Give me my total reported incurred loss and expense",
+                        "Tell me the total reported incurred loss and expense",
+                        "Tell me my total reported incurred loss and expense",
+                        "What is the total reported incurred loss and expense",
+                        "What is my total reported incurred loss and expense"
+                    ]
+                },
+                {
+                    "name": "RetroDateIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the retro date",
+                        "Give me my retro date",
+                        "Tell me the retro date",
+                        "Tell me my retro date",
+                        "What is the retro date",
+                        "What is my retro date"
+                    ]
+                },
+                {
+                    "name": "RevenueIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the revenue",
+                        "Give me my revenue",
+                        "Tell me the revenue",
+                        "Tell me my revenue",
+                        "What is the revenue",
+                        "What is my revenue"
+                    ]
+                },
+                {
+                    "name": "ResidentialOrCommercialBusinessModifierIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the residential or commercial business modifier",
+                        "Give me my residential or commercial business modifier",
+                        "Tell me the residential or commercial business modifier",
+                        "Tell me my residential or commercial business modifier",
+                        "What is the residential or commercial business modifier",
+                        "What is my residential or commercial business modifier"
+                    ]
+                },
+                {
+                    "name": "ProjectSizeModifierIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the project size modifier",
+                        "Give me my project size modifier",
+                        "Tell me the project size modifier",
+                        "Tell me my project size modifier",
+                        "What is the project size modifier",
+                        "What is my project size modifier"
+                    ]
+                },
+                {
+                    "name": "WrittenContractsModifierIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the written contracts modifier",
+                        "Give me my written contracts modifier",
+                        "Tell me the written contracts modifier",
+                        "Tell me my written contracts modifier",
+                        "What is the written contracts modifier",
+                        "What is my written contracts modifier"
+                    ]
+                },
+                {
+                    "name": "RiskManagementModifierIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the risk management modifier",
+                        "Give me my risk management modifier",
+                        "Tell me the risk management modifier",
+                        "Tell me my risk management modifier",
+                        "What is the risk management modifier",
+                        "What is my risk management modifier"
+                    ]
+                },
+                {
+                    "name": "FinancialStrengthIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the financial strength",
+                        "Give me my financial strength",
+                        "Tell me the financial strength",
+                        "Tell me my financial strength",
+                        "What is the financial strength",
+                        "What is my financial strength"
+                    ]
+                },
+                {
+                    "name": "UseofSubcontractorsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the use of subcontractors",
+                        "Give me my use of subcontractors",
+                        "Tell me the use of subcontractors",
+                        "Tell me my use of subcontractors",
+                        "What is the use of subcontractors",
+                        "What is my use of subcontractors"
+                    ]
+                },
+                {
+                    "name": "HistoryofDisciplinaryActionIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the history of disciplinary action",
+                        "Give me my history of disciplinary action",
+                        "Tell me the history of disciplinary action",
+                        "Tell me my history of disciplinary action",
+                        "What is the history of disciplinary action",
+                        "What is my history of disciplinary action"
+                    ]
+                },
+                {
+                    "name": "MergersandAcquisitionsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the mergers and acquisitions",
+                        "Give me my mergers and acquisitions",
+                        "Tell me the mergers and acquisitions",
+                        "Tell me my mergers and acquisitions",
+                        "What is the mergers and acquisitions",
+                        "What is my mergers and acquisitions"
+                    ]
+                },
+                {
+                    "name": "ExperienceofPrincipalsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the experience of principals",
+                        "Give me my experience of principals",
+                        "Tell me the experience of principals",
+                        "Tell me my experience of principals",
+                        "What is the experience of principals",
+                        "What is my experience of principals"
+                    ]
+                },
+                {
+                    "name": "ClientSizeIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the client size",
+                        "Give me my client size",
+                        "Tell me the client size",
+                        "Tell me my client size",
+                        "What is the client size",
+                        "What is my client size"
+                    ]
+                },
+                {
+                    "name": "RequireSubstoShowProofOfEAndOIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the subs required to show proof of errors and omissions",
+                        "Give me my subs required to show proof of errors and omissions",
+                        "Tell me the subs required to show proof of errors and omissions",
+                        "Tell me my subs required to show proof of errors and omissions",
+                        "What is the subs required to show proof of errors and omissions",
+                        "What is my subs required to show proof of errors and omissions"
+                    ]
+                },
+                {
+                    "name": "RequireAandEstoShowProofOfEandOIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the A and E required to show proof of errors and omissions",
+                        "Give me my A and E required to show proof of errors and omissions",
+                        "Tell me the A and E required to show proof of errors and omissions",
+                        "Tell me my A and E required to show proof of errors and omissions",
+                        "What is the A and E required to show proof of errors and omissions",
+                        "What is my A and E required to show proof of errors and omissions"
+                    ]
+                },
+                {
+                    "name": "KYLocalGovernmentTaxRateIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the local government tax rate",
+                        "Give me my local government tax rate",
+                        "Tell me the local government tax rate",
+                        "Tell me my local government tax rate",
+                        "What is the local government tax rate",
+                        "What is my local government tax rate"
+                    ]
+                },
+                {
+                    "name": "KYLocalGovernmentTaxOverriddenIntent",
+                    "slots": [],
+                    "samples": [
+                        "Do I have local government tax overridden",
+                        "Tell me if I have local government tax overridden",
+                        "is local government tax overridden"
+                    ]
+                },
+                {
+                    "name": "UserIdIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is my amazon ID",
+                        "What is the amazon ID",
+                        "Tell me my amazon ID",
+                        "Tell me the amazon ID",
+                        "Give me my amazon ID",
+                        "Give me the amazon ID",
+                        "What is my account ID",
+                        "What is the account ID",
+                        "Tell me my account ID",
+                        "Tell me the account ID",
+                        "Give me my account ID",
+                        "Give me the account ID"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
