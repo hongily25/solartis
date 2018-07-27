@@ -5,24 +5,66 @@
 </head>
 
 <body>
-	  <h1><a href="https://solartis.com"><img src="/policy-pal-logo.jpg" style="background-color: #fff;"></a></h1>
+	  <h1><a href="https://solartis.com"><img src="/policy-pal-logo-2.jpg" style="background-color: #fff;"></a></h1>
    <!--<div class="info"><p>An easier way to fill out insurance forms.</p></div>-->
   
   <form method="post" action="/" enctype="application/x-www-form-urlencoded">
 	
 	    
     <div class="contentform">
-    	<div class="policy-img"><img src="/FontAwesome_f15c(0)_128.png"></div>
 
          <% if(statusCode == 200) { %>
 	 	<h1>Thank you for filling out the form!</h1>
-		It has been successfully saved to the database. Now go to your Alexa app and link your Amazon account to the Policy Pal skill. Afterwards, you will be able to use the Policy Pal skill to request information about your insurance.
+		<div style="padding-top:20px">Now please go to your Alexa app and link your Amazon account to the Policy Pal skill. Afterwards, you will be able to use the Policy Pal skill to request information about your insurance. You can ask Policy Pal for:
+		<ul>
+		<li>Program Name</li>
+	<li>Policy Type</li>
+	<li>Zip Code</li>
+	<li>State</li>
+	<li>Effective Date</li>
+	<li>Event Name</li>
+	<li>Event Version</li>
+	<li>Applicable From Date</li>
+	<li>Number of Providers</li>
+	<li>Shared or Separate Limit</li>
+	<li>Coverage Type</li>
+	<li>Professional Liability Limits of Insurance</li>
+	<li>Workplace Liability Limits of Insurance</li>
+	<li>Workplace Liability Insurance</li>
+	<li>Corporation or Partnership Coverage</li>
+	<li>Additional Insured Coverage</li>
+	<li>Employment Category</li>
+	<li>Transition Factor</li>
+	<li>Product Number</li>
+	<li>Product Version Number</li>
+	<li>Expenses Inside or Outside</li>
+	<li>Deductible Amount</li>
+	<li>Number of Claims in the Past Five Years</li>
+	<li>Total Reported Incurred Loss and Expense</li>
+	<li>Retro Date</li>
+	<li>Revenue</li>
+	<li>Residential or Commercial Business Modifier</li>
+	<li>Project Size Modifier</li>
+	<li>Written Contracts Modifier</li>
+	<li>Risk Management Modifier</li>
+	<li>Financial Strength</li>
+	<li>Use of Subcontractors</li>
+	<li>History of Disciplinary Action</li>
+	<li>Mergers and Acquisitions</li>
+	<li>Experience of Principals</li>
+	<li>Client Size</li>
+	<li>Subs Required to Show Proof of Errors and Omissions</li>
+	<li>A and E Required to Show Proof of Errors and Omissions</li>
+	<li>Local Government Tax Rate</li>
+	<li>Local Government Tax Overridden</li>
+		</ul>
+		</div>
 	<% } else { %>
 		<h1>Sorry, there was an error!</h1>
-		Please go back and try again.
+		<div style="padding-top:20px">Please go back and try again.</div>
 	<% } %>
 	<br><br>
-        <a href="/">Return to homepage</a>
+        <a href="/" class="btn btn-primary" style="background-color: #135795; border-color:#135795">Return to homepage</a>
     </div>
 
 
