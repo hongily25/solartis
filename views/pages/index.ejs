@@ -5,10 +5,11 @@
 </head>
 
 <body>
-	  <h1><a href="https://solartis.com"><img src="/policy-pal-logo-2.jpg" style="background-color: #fff;"></a>
+	  <h1 style="text-align:center"><a href="https://solartis.com"><img src="/policy-pal-logo-2.jpg" style="background-color: #fff;"></a>
 	  
 	  <%= message %></h1>
    <div class="info"><p>Professional liability insurance (PLI), also called professional indemnity insurance (PII) but more commonly known as errors & omissions (E&O) in the US, is a form of liability insurance which helps protect professionals and companies from bearing the full cost of defending against a negligence claim and damages awarded in such a civil lawsuit.</p></div>
+   
    <div class="info"><p style="text-align:center">
    <a href="#" id="LoginWithAmazon">
   <img border="0" alt="Login with Amazon"
@@ -17,7 +18,10 @@
 </a></p></div>
 
 <% if (message) { %>
-Hello, <%= message %> !
+<script type="text/javascript">
+ document.getElementById('LoginWithAmazon').style.display = "none";
+</script>
+<div class="info">Hello, <%= message %>!</div>
 <% } else { %>
 <div id="amazon-root"></div>
 <script type="text/javascript">
