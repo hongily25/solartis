@@ -5,17 +5,14 @@
 </head>
 
 <body>
-	  <h1 style="text-align:center"><a href="/"><img src="/policy-pal-logo-2.jpg" style="background-color: #fff;"></a>
-	  
-	  <%= message %></h1>
+	  <h1 style="text-align:center"><a href="/"><img src="/policy-pal-logo-2.jpg" style="background-color: #fff;"></a></h1>
   <!-- <div class="info"><p>Professional liability insurance (PLI), also called professional indemnity insurance (PII) but more commonly known as errors & omissions (E&O) in the US, is a form of liability insurance which helps protect professionals and companies from bearing the full cost of defending against a negligence claim and damages awarded in such a civil lawsuit.</p></div>
   -->
-  
-  <div class="info"><p>Policy Pal is an application for issuing insurance policies on the road and a voice app for navigating policy information.</p></div>
    
 <% if (message) { %>
-<div class="info" style="text-align:center">Hello, <%= message %>! You are now logged into Amazon.</div>
+<div class="info" style="text-align:center; margin-top: 20px">Hello, <%= message %>! You are now logged into Amazon. Please continue and fill out the form.</div>
 <% } else { %>
+  <div class="info"><p>Policy Pal is an application for issuing insurance policies on the road and a voice app for navigating policy information.</p></div>
 <div class="info"><p style="text-align:center">
    <a href="#" id="LoginWithAmazon">
   <img border="0" alt="Login with Amazon"
@@ -46,7 +43,7 @@
 
   
   <form method="post" action="/" enctype="application/x-www-form-urlencoded">
-	    <h1>Please sign in with Amazon and fill out the following policy.</h1>
+	    <h1>Please fill out the following policy.</h1>
 	    
     <div class="contentform">
       <div class="policy-img"><img src="/FontAwesome_f15c(0)_128.png"></div>
