@@ -4,6 +4,7 @@ const request = require('request')
 const PORT = process.env.PORT || 5000
 var MongoClient = require('mongodb').MongoClient
 var bodyParser = require('body-parser')
+import * as blockstack from 'blockstack'
 
 var url = "mongodb+srv://emily:Kurama!25@cluster0-gygul.mongodb.net/test";
 
