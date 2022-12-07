@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "blockstack": "^19.2.1",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "mongodb": "^3.0.10"
